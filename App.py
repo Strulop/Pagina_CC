@@ -60,6 +60,4 @@ def buscar():
                                error=f"No hay datos de centros comerciales para '{ciudad}'.",
                                malls=[])
 
-if __name__ == '__main__':
-    # Ejecutamos en modo debug para desarrollo
-    app.run(debug=True)
+# No ejecutamos app.run() aquí porque Gunicorn lo manejará
